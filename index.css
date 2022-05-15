@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    /* background-color: grey; */
+    position: relative;
+    scroll-behavior: smooth;
+}
+.head-part{
+    display: flex;
+    justify-content: space-between;
+}
+.head-part .logo{
+    padding: 8px 20px;
+}
+.head-part .logo img{
+    height: 110px;
+}
+.sub-container{
+    margin: 2rem 5rem;
+}
+.info{
+    padding: 3px 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap:1rem;
+}
+.info .phn-email .center{
+    background-color: #3DADF2;
+    width: 35px;
+    height: 35px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info .phn-email{
+    display: flex;
+    align-items: center;
+    height: 37px;
+    gap:0.5rem;
+}
+#ph,#en{
+    width: 18px;
+    height: 18px;
+}
+#contact-btn{
+    background-image: linear-gradient(180deg,#005696,#1c2541);
+    color: white;
+    padding: 0.4rem 1.5rem;
+    border-radius: 120px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.banner{
+    background-image: url("images/banner2.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 400px;
+}
+.banner h1{
+    font-size: 51px;
+    padding: 2.5rem 0;
+    color: #002157;
+}
+.banner .para{
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+#enroll-btn{
+    background-color: #f8ca1b;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 120px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+.achieve-more{
+    margin: 2rem 1rem;
+    display: flex;
+    padding: 3rem;
+    border-radius: 15px;
+    background-color: rgba(245, 245, 245, 0.837);
+}
+.achieve-more .left{
+    width: 40%;
+}
+.achieve-more .left h1{
+    margin: 1rem 0;
+    font-size: 2.5rem;
+}
+.achieve-more .right{
+    width:55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.achieve-more .right .arrange{
+    padding: 1.3rem;
+    display: flex;
+    gap: 1rem;
+    border: none;
+    margin: 0;
+}
+.achieve-more .right .arrange .data h2{
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+    color: #002157;
+}
+.achieve-more .right .arrange .data p{
+    font-size: 0.8rem;
+    color: grey;
+    color: #002157;
+}
+.achieve-more .right .arrange{
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.achieve-more .right .arrange img{
+    width: 35px;
+    height: 35px;
+}
+#rb1{
+    border-right: none;
+}
+#rb2{
+    border-bottom:none;
+}
+#rb3{
+    border-right:none;
+    border-bottom:none;
+}
+/* .top-courses{
+    padding: 1rem 0;
+} */
+.top-courses h1{
+    color: #002157;
+    margin-bottom: 10px;
+}
+
+.top-courses p{
+    color: #002157;
+}
+.training{
+    margin: 2rem 1rem 4rem 1rem;
+    display: flex;
+    padding: 3rem;
+    border-radius: 15px;
+    background-color: rgba(245, 245, 245, 0.837);
+}
+.training .flutter{
+    width: 28%;
+    margin-right: 6rem;
+}
+.live .live-training{
+    width: 28%;
+    margin-left: 6rem;
+}
+
+.training .flutter .wrap,.live .live-training .wrap{
+    padding: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 1px 2px 70px 1px  grey;
+    border-radius: 17px;
+}
+.training .flutter .upper,.live .live-training .upper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.training .flutter .upper img,.live .live-training .upper img{
+    width: 250px;
+    height: 150px;
+}
+.training .flutter .upper h2,.live .live-training .upper h2{
+    font-size: 1.3rem;
+    width: 80%;
+    margin: 0.5rem 0;
+}
+.training .flutter .upper p,.live .live-training .upper p{
+    font-size: 1rem;
+    width: 80%;
+}
+.training .flutter .lower ,.live .live-training .lower{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.training .flutter .lower button,.live .live-training .lower button{
+    background-color: #002157;
+    color: white;
+    padding: 0.3rem 1.2rem;
+    border-radius: 35px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2px;
+}
+
+#rate,#rate1{
+    font-size: 1.2rem;
+}
+
+#rating,#rating1{
+    width: 12px;
+    height: 12px;
+}
+#popular{
+    background-color: #3DADF2;
+}
+.training .flutter-train{
+    width: 55%;
+}
+.training .flutter-train h1{
+    font-size: 2.3rem;
+    color: #002157;
+}
+.training .flutter-train p,.live .live-project p{
+    font-size: 1.1rem;
+    color: #002157;
+    margin: 1rem 0;
+}
+.training .flutter-train h3{
+    font-size: 1.5rem;
+    color: #3DADF2;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+.training .flutter-train strong,.live .live-project strong{
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+.training .flutter-train .enrol-syll,.live .live-project .enrol-syll{
+    margin: 2rem 0;
+}
+#enroll-now{
+    background-color: #f8ca1b;
+    color: white;
+    padding: 0.5rem 1.7rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    margin-right: 2.5rem;
+    font-weight: bold;
+}
+#view-syllabus{
+    color:#002157;
+    padding: 0.5rem 1.7rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 1px solid #002157 ;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.live{
+    margin: 2rem 1rem 4rem 1rem;
+    display: flex;
+    padding: 3rem;
+    color: #002157;
+    border-radius: 15px;
+    background-color: #fdc800;  
+}
+
+#popular1{
+    background-color: #3DADF2;
+}
+#view-syllabus1{
+    color:#002157;
+    padding: 0.5rem 1.7rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 1px solid #002157 ;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #fdc800;
+}
+#enroll-now1{
+    background-image:linear-gradient(#3dadf2,#005696);
+    color: white;
+    padding: 0.5rem 1.7rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    margin-right: 2.5rem;
+}
+.live .live-project{
+    width: 55%;
+}
+.live .live-project h1{
+    font-size: 2rem;
+    color: #002157;
+}
+
+.live .live-project h3{
+    font-size: 1.5rem;
+    color: white;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+.live .live-training .upper h2{
+    text-align: center;
+}
+.img-banner img{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.foot-container{
+    margin: 1rem 14rem;
+    /* border: 1px solid red; */
+    padding: 2rem 5rem;
+    position: relative;
+}
+.foot-container .recruit-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    margin-bottom:2rem ;
+}
+.recruit-wrap .recruiting img{
+    height: 350px;
+}
+
+#e-mail{
+    height: 12px;
+    width: 12px;
+    background-color: black;
+}
+#subscribe{
+    color: #002157;
+    background-color: #f8ca1b;
+    padding: 0.4rem 1.1rem;
+    border-radius: 5px ;
+    border: none;
+    font-weight: bold;
+}
+.recruit-wrap .single-update .email-div .contol input[type="email"]{
+    border:none; 
+    padding: 4px;
+}
+.recruit-wrap .single-update p{
+    font-size: 0.7rem;
+    color: #f8ca1b;
+    margin: 0.5rem 0;
+}
+.recruit-wrap .single-update h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    margin: 0.5rem 0;
+    color: #002157;
+}
+.recruit-wrap .single-update .email-div{
+    padding: 4px;
+    border: 1px solid #002157;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.7rem;
+}
+.email-div .contol{
+    display: flex;
+    align-items: center;
+    gap:3px;
+    padding: 2px;
+}
+.container-address{
+    background-color: #005696;
+    margin-top: 4rem;
+}
+.container-address .address{
+    margin: 3rem 14rem 0 14rem;
+    /* border: 1px solid red; */
+    padding: 5rem 2rem 2rem 2rem;
+}
+.address .address-wrap{
+    display: flex;
+}
+.address-wrap .left{
+    width: 50%;
+}
+.address-wrap .left h1{
+    font-weight: 500;
+    color: #f8ca1b;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+}
+.address-wrap .left p{
+    color: white;
+    font-size: 0.9rem;
+}
+.address-wrap .right{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+.address-wrap .right .one p{
+    font-size: 0.9rem;
+}
+.address-wrap .right .one .one-wrap img{
+    width: 16px;
+    height: 16px;
+}
+.address-wrap .right .one .one-wrap,.address-wrap .right .two .two-wrap{
+    display: flex;
+    gap: 0.5rem;
+    color: white;
+    align-items: center;
+}
+.address-wrap .right .two button,.address-wrap .right .one button{ 
+    margin: 1rem 0;
+    background-color: white;
+    color: #002157;
+    padding: 0.7rem 2rem ;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.container .social-wrap{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 1rem;
+    gap:5rem;
+    padding-right:6rem ;
+    background-color: #fdc800; 
+}
+.container .social-wrap div img{
+    width: 30px;
+    height: 30px;
+}
+.foot-container .low-cost{
+    position: absolute;
+    bottom: -27%;
+    left: 0%;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    border-radius: 15px;
+    height: 150px;
+    background-color: #1c2541;
+}
+.low-cost .left-cost img{
+    width: 135px;
+}
+.low-cost .low-cost-wraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.low-cost .left-cost {
+    display: flex;
+    width: 50%;
+    gap:1rem;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+.low-cost .left-cost .cost-data h3 span{
+    color: #f8ca1b;
+}
+.low-cost .right-cost{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.low-cost .right-cost .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.low-cost .right-cost .time .t{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.low-cost .right-cost .time .n{
+    font-size: 0.8rem;
+    color: #f8ca1b;
+}
+/* form */
+#hide-form,#hide-pdf{
+    display: none;
+}
+.form-group,.pdf-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #00215790;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    /* background: transparent; */
+}
+.form-group .form-wrap{
+    border: 2px solid black;
+    min-width: 50%;
+    min-height: 50%;
+    background-color: #f8ca1b;
+}
+.pdf-group .pdf-wrap{
+    border: 2px solid black;
+    min-width: 50%;
+    min-height: 90%;
+    background-color: #f8ca1b
+}
+
+.form-group .form-wrap,.pdf-group .pdf-wrap{
+    color: #002157;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pdf-group .pdf-wrap{
+    gap: 1rem;
+}
+.form-group .form-wrap div input{
+    margin: 0.5rem;
+    width: 200px;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    background-color: lightyellow;
+}
+.form-group .form-wrap .btn-form{
+    min-width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#hidef,#enrol,#hidepdf{
+    padding:0.5rem 1rem;
+    border:2px solid white;
+    background-color: #002157;
+    color: white;
+    border-radius:10px ;
+    cursor: pointer;
+    width: inherit;
+    font-weight: bold;
+}
+@media only screen and (max-width: 500px) {
+    .head-part{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .sub-container{
+        margin: 2rem 2.5rem;
+    }
+    .head-part .logo{
+        padding: 0;
+    }
+    .info{
+        flex-direction: column;
+        gap:2rem;
+    }
+    .head-part .logo img{
+        height: 55px;
+    }
+    .achieve-more{
+        margin: 2rem 0.7rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .achieve-more .left{
+        width: 100%;
+    }
+    .achieve-more .left h1{
+        margin: 1rem 0;
+        font-size: 1.7rem;
+    }
+    .achieve-more .right{
+        width:100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .achieve-more .right .arrange{
+        border-bottom: 1px solid grey;
+        border-right: none;
+    }
+    #rb2{
+        border-bottom: 1px solid grey;
+    }
+    .achieve-more .right .arrange .data h2{
+        font-size: 1rem;
+    }
+    .achieve-more .right .arrange .data p{
+        font-size: 0.7rem;;
+    }
+    .training{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .training .flutter{
+        width: 100%;
+        margin-right: 0;
+    }
+    .live .live-training{
+        width: 100%;
+        margin-left: 0;
+    }
+    .training .flutter-train{
+        width: 100%;
+    }
+    .training .flutter-train h1{
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+    }
+    .training .flutter-train p,.live .live-project p{
+        font-size: 1rem;
+    }
+    .training .flutter-train h3{
+        font-size: 1.2rem;
+    }
+    #enroll-now{
+        background-color: #f8ca1b;
+        color: white;
+        padding: 0.5rem 2.8rem;
+        font-size: 1rem;
+        margin: 1.5rem 0;
+    }
+    .live .live-project{
+        width: 100%;
+    }
+    .live{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .live .live-project h1{
+        font-size: 1.5rem;
+    }
+    
+    .live .live-project h3{
+        font-size: 1.3rem;
+    }
+    #enroll-now1{
+        background-image:linear-gradient(#3dadf2,#005696);
+        color: white;
+        padding: 0.5rem 2.8rem;
+        margin: 1rem 0;
+    }
+}
