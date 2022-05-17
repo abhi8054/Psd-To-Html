@@ -579,7 +579,7 @@ body{
 #enrol{
     padding: 11px 1rem;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .head-part{
         display: flex;
         flex-direction: column;
@@ -788,5 +788,9 @@ body{
     }.for-monile .mobile-wrap .banner1 p{
         font-size: 1.2rem;
         margin: 2rem 0.7rem;
+    }
+    .low-cost .right-cost .time .t{
+        font-size: 1.7rem;
+        font-weight: normal;
     }
 }

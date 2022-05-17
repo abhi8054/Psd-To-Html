@@ -15,7 +15,6 @@ switch($task){
         $email=$_GET['email'];
         $number=$_GET['number'];
         $date = date('d-m-y');
-        
         $sql="INSERT INTO `enroll`(`fullname`, `email`, `number`, `date_enroll`) VALUES ('$name','$email','$number','$date')";
         $exe = mysqli_query($conn,$sql);
         if($exe){
