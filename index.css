@@ -154,7 +154,7 @@ body{
     color: #002157;
 }
 .training{
-    margin: 2rem 1rem 4rem 1rem;
+    margin: 2rem 1rem 2rem 1rem;
     display: flex;
     padding: 3rem;
     border-radius: 15px;
@@ -586,7 +586,7 @@ body{
         justify-content: space-between;
     }
     .sub-container{
-        margin: 2rem 2.5rem;
+        margin: 2rem 2rem;
     }
     .head-part .logo{
         padding: 0;
@@ -599,9 +599,10 @@ body{
         height: 60px;
     }
     .achieve-more{
-        margin: 2rem 0.7rem;
         flex-direction: column;
-        padding: 1rem;
+        padding:2rem 1rem;
+        margin-left: 0;
+        margin-right: 0;
     }
     .achieve-more .left{
         width: 100%;
@@ -633,18 +634,27 @@ body{
     }
     .training{
         flex-direction: column;
-        padding: 1rem;
+        padding:2rem 1rem;
+        margin-left: 0;
+        margin-right: 0;
     }
     .training .flutter{
         width: 100%;
         margin-right: 0;
     }
+    .training .flutter .upper h2 + p{
+        text-align: center;
+    }
+
     .live .live-training{
         width: 100%;
         margin-left: 0;
     }
     .training .flutter-train{
         width: 100%;
+    }
+    .live .live-training .upper p {
+        text-align: center;
     }
     .training .flutter-train h1{
         font-size: 1.5rem;
@@ -668,7 +678,9 @@ body{
     }
     .live{
         flex-direction: column;
-        padding: 1rem;
+        padding:2rem 1rem;
+        margin-left: 0;
+        margin-right: 0;
     }
     .live .live-project h1{
         font-size: 1.5rem;
@@ -693,16 +705,24 @@ body{
         margin: 2rem 0;
     }
     .foot-container{
-        margin: 1rem 3rem;
-        padding: 2rem 2rem;
+        margin: 1rem 1rem;
+        padding: 2rem 0;
     }
     .foot-container .recruit-wrap{
         flex-direction: column;
         gap:2rem;
     }
+
+    .foot-container .recruit-wrap .single-update{
+        padding: 0 1rem;
+    }
+
     .foot-container .low-cost{
         bottom: -47%;
         height: 370px;
+        width: 85%;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .low-cost .low-cost-wraper{
         flex-direction: column;
@@ -723,7 +743,7 @@ body{
     }
     .container-address .address{
         margin: 3rem 2rem 0 2rem;
-        padding: 17rem 2rem 2rem 2rem;
+        padding: 17rem 1rem 2rem 1rem;
     }
     .address .address-wrap{
         flex-direction: column;
